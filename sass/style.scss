@@ -1,0 +1,202 @@
+
+/*Para que quede guardado en el estilo, 
+pongo watch sass, una vez que dice waching esta copilando*/
+
+@import "fuentes";
+@import "generales";
+@import "ofrecemos";
+@import "galeria";
+@import "beneficio";
+@import "form";
+@import "footer";
+
+
+@media screen and (max-width: 800px){
+   
+    .accordion {
+        flex-direction: column;
+        padding: 5%;
+        height: 500px;
+        box-shadow: none;
+    }
+    .box {
+        box-shadow: none;
+    }
+    .box:hover {
+        flex: 5;
+    }
+}
+
+
+
+@media screen and (max-width: 900px){
+    
+    p{
+        text-align: justify;
+        color: #000000;
+        margin: 9px 4%;
+    }
+
+    header{
+        background-position: center;
+    }
+
+    /* galeria */
+
+  .imagen-port{
+        width: 90%;
+    }
+     
+    /*Form*/
+
+    .contact-us {
+        width: 80%;
+        padding: auto;
+    }
+
+    input {
+	width: 100%;
+    }
+
+    textarea{
+	width: 100%;
+    }
+
+    form{
+	    width: 100%;
+    }
+
+}
+
+@media screen and (max-width:500px){
+    
+    nav{
+        text-align: center;
+        padding:20px 0 0 0;
+    }
+    .texto-general h1{
+        padding: 1px;
+        font-size: 30px;
+    }
+    .texto-general h2{
+        font-size:25px;
+        padding: 1px;
+    }
+    p{
+        text-align: justify;
+        color: #000000;
+        margin: 9px 4%;
+    }
+
+    .contenido-textos-general{
+        grid-template-columns: 1fr;
+    }
+
+    .contenido-textos-general > div{
+        width: 100%;
+        background: linear-gradient(to right, #a484a3ea, #f13952b0), url(../img/sentadilla.png);
+        background-size:contain;
+        padding: 7px;
+        border-radius: 5px;
+    }
+
+    /*galeriia*/
+
+    .galeria-port{
+        grid-template-columns: 1fr;
+    }
+    
+
+    /*Form*/
+
+    input {
+	width: 80%;
+    }
+
+    textarea{
+	width: 80%;
+    }
+
+    form{
+	    width: 72%;
+    }
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+        text-align: center;
+    }
+
+    .content-foo{
+        margin-bottom: 10px;
+    }
+
+    .content-foo h4{
+        width: auto;
+        
+    }
+
+    .content-foo p{
+        color: #fff;
+        padding-bottom: 10px;
+    }
+
+    .titulo-final{
+        font-style: 5px;
+    }
+
+
+
+}
+
+@media screen and (max-width:400px){
+
+    nav{
+        text-align: center;
+        padding:20px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+    }
+    .texto-general h1{
+        font-size: 28px;
+    }
+    .texto-general h2{
+        font-size:20px;
+    }
+    p{
+        text-align: justify;
+        color: #000000;
+        margin: 9px 4%;
+    }
+
+    /*footer */
+
+    .contenedor-footer{
+        flex-direction: column;
+        border: none;
+    }
+
+    .content-foo{
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .content-foo h4{
+        border: none;
+    }
+
+    .content-foo p{
+        color: #fff;
+        border-bottom: 1px solid #f3f3f3;
+        padding-bottom: 20px;
+    }
+
+    .titulo-final{
+        font-style: 20px;
+    }
+
+
+}
+
+

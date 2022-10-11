@@ -1,0 +1,37 @@
+
+/* pie de pagina */
+
+footer{
+    background: hwb(0 30% 70%);
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow:hidden;
+    .contenedor-footer{
+        display: flex;
+        width: 90%;
+        justify-content: space-evenly;
+        margin:auto;
+        padding-bottom: 30px;  
+        border-bottom: 1px solid #ccc;
+        .content-foo{
+            text-align: center;
+            h4 {
+                color: #fff;
+                border-bottom: 3px solid #f58897;
+                padding-bottom: 5px;
+                margin-bottom: 10px;
+            }
+            p{
+                color: #ccc
+            }
+            
+
+        }
+    }
+    .titulo-final{
+        text-align: center;
+        font-size: 24px;
+        margin:20px;
+        color: rgba(196, 196, 196, 0.467);
+    }
+}

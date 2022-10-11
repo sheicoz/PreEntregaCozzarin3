@@ -1,0 +1,62 @@
+
+/*Beneficios*/
+
+body .accordion-container {
+    padding: 0;
+    margin: 0;
+    font-family: 'Fjalla One', sans-serif;
+    background: linear-gradient( #fff, #fefefe, #eaeaea);
+}
+.accordion {
+    max-width: 800px;
+    background: rgba(0, 0, 0, 0.10);
+    height: 300px;
+    margin: 20px auto;
+    display: flex;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+    flex-direction: row;
+    cursor: pointer;
+    margin-bottom: 100px;
+    .box {
+        position: relative;
+        height: 100%;
+        flex: 1;
+        background-position: left;
+        background-size: cover;
+        transition: .7s;
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+    }
+    .box:hover{
+        flex: 5;
+        height: 350px;
+    }
+    .a3 {
+        background-image: url("../img/servicios1.png");
+        background-color:  #ee9ca79c;
+        color: rgb(10, 10, 10);
+    }
+    .a4 {
+        background-image: url("../img/servicios.png");
+        background-color:  #ee9ca79c;
+        color:rgb(10, 10, 10);
+    }
+    .a5 {
+        background-image: url("../img/mente1.png");
+        background-color:  #ee9ca79c; 
+        color:rgb(10, 10, 10);
+    }
+    .texto {
+        background-color: #ee9ca7d5;
+        font-weight: normal;
+        font-family: 'Exo 2', sans-serif;
+        position: absolute;
+        bottom: 0;
+        opacity: 0;
+        width: 200px;
+        text-align: center;
+        margin: 100px auto 20px auto;
+    }
+    .box:hover .texto{
+        opacity:1;
+    }
+}

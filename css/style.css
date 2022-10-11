@@ -1,0 +1,461 @@
+/*Para que quede guardado en el estilo, 
+pongo watch sass, una vez que dice waching esta copilando*/
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One");
+@import url("https://fonts.googleapis.com/css?family=Exo+2");
+/*Generales*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "open sans";
+}
+
+/* Header */
+header {
+  width: 100%;
+  height: 600px;
+  background: #ee9ca7;
+  background: linear-gradient(to right, rgba(179, 143, 178, 0.5019607843), rgba(232, 59, 82, 0.4509803922)), url(../img/portada1.png);
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+}
+header .wave {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.texto-general {
+  display: block;
+  height: 300px;
+  padding: 5%;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.texto-general h1 {
+  font-size: 50px;
+  color: #ee9ca7;
+  padding-bottom: 2%;
+}
+.texto-general h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: rgb(122, 33, 91);
+}
+
+.titulo {
+  color: #c9868f;
+  font-size: 30px;
+  text-align: center;
+}
+
+/* Lo que ofrecemos */
+/*grid*/
+.contenido-textos-general {
+  width: 100%;
+  padding: 70px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+.contenido-textos-general h3 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.contenido-textos-general > div {
+  width: 100%;
+  background: linear-gradient(to right, rgba(164, 132, 163, 0.9176470588), rgba(241, 57, 82, 0.6901960784)), url(../img/sentadilla.png);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  padding: 50px;
+  border-radius: 5px;
+}
+.contenido-textos-general .contenido-textos .numbers {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  margin-top: 5px;
+  width: 32px;
+  height: 32px;
+  color: rgb(255, 255, 255);
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  border-bottom-left-radius: 32px;
+  border-bottom-right-radius: 32px;
+  background-color: #ee9ca7;
+}
+.contenido-textos-general .contenido-textos p {
+  color: rgb(255, 255, 255);
+  text-align: justify;
+}
+
+/* Portafolio */
+.galeria-port {
+  width: 100%;
+  display: grid;
+  padding-left: 2%;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.galeria-port .hover-galeria {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 0;
+  transform: scale(0);
+  background: rgba(246, 179, 188, 0.3176470588);
+  transition: transform 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.galeria-port .hover-galeria img {
+  width: 30px;
+}
+.galeria-port .hover-galeria p {
+  color: #fff;
+}
+
+.imagen-port {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 5px;
+  margin-left: 5px;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.imagen-port > img {
+  width: 80%;
+  height: 80%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+
+.imagen-port:hover .hover-galeria {
+  transform: scale(1);
+}
+
+/*Beneficios*/
+body .accordion-container {
+  padding: 0;
+  margin: 0;
+  font-family: "Fjalla One", sans-serif;
+  background: linear-gradient(#fff, #fefefe, #eaeaea);
+}
+
+.accordion {
+  max-width: 800px;
+  background: rgba(0, 0, 0, 0.1);
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+  flex-direction: row;
+  cursor: pointer;
+  margin-bottom: 100px;
+}
+.accordion .box {
+  position: relative;
+  height: 100%;
+  flex: 1;
+  background-position: left;
+  background-size: cover;
+  transition: 0.7s;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.47);
+}
+.accordion .box:hover {
+  flex: 5;
+  height: 350px;
+}
+.accordion .a3 {
+  background-image: url("../img/servicios1.png");
+  background-color: rgba(238, 156, 167, 0.6117647059);
+  color: rgb(10, 10, 10);
+}
+.accordion .a4 {
+  background-image: url("../img/servicios.png");
+  background-color: rgba(238, 156, 167, 0.6117647059);
+  color: rgb(10, 10, 10);
+}
+.accordion .a5 {
+  background-image: url("../img/mente1.png");
+  background-color: rgba(238, 156, 167, 0.6117647059);
+  color: rgb(10, 10, 10);
+}
+.accordion .texto {
+  background-color: rgba(238, 156, 167, 0.8352941176);
+  font-weight: normal;
+  font-family: "Exo 2", sans-serif;
+  position: absolute;
+  bottom: 0;
+  opacity: 0;
+  width: 200px;
+  text-align: center;
+  margin: 100px auto 20px auto;
+}
+.accordion .box:hover .texto {
+  opacity: 1;
+}
+
+/*Form*/
+.formulariio-fondo {
+  background: linear-gradient(to right, rgba(172, 147, 172, 0.4470588235), rgba(213, 83, 100, 0.4509803922)), url(../img/form.png);
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.contact-us {
+  width: 40%;
+  padding: auto;
+  background: #f8f4e5;
+  border: 1px solid black;
+  box-shadow: 15px 15px 1px #ee9ca7, 15px 15px 1px 2px black;
+}
+
+input {
+  display: block;
+  width: 100%;
+  font-size: 10pt;
+  line-height: 28pt;
+  font-family: "Fjalla One";
+  margin-bottom: 28pt;
+  border: none;
+  border-bottom: 5px solid black;
+  background: #f8f4e5;
+  min-width: 250px;
+  padding-left: 5px;
+  outline: none;
+  color: black;
+}
+
+input:focus {
+  border-bottom: 5px solid #ffa580;
+}
+
+.btn-form {
+  display: block;
+  margin: 10% auto;
+  line-height: 28pt;
+  padding: 0 20px;
+  background: #ee9ca7;
+  letter-spacing: 2px;
+  transition: 0.2s all ease-in-out;
+  outline: none;
+  border: 1px solid black;
+  box-shadow: 3px 3px 1px 1px #0c6244, 3px 3px 1px 2px black;
+}
+
+.btn-form:hover {
+  background: #f3bfc6;
+  color: white;
+  border: 1px solid black;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+  border-bottom: 5px solid #95a4ff;
+  -webkit-text-fill-color: #2A293E;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+/* pie de pagina */
+footer {
+  background: hwb(0 30% 70%);
+  padding: 60px 0 30px 0;
+  margin: auto;
+  overflow: hidden;
+}
+footer .contenedor-footer {
+  display: flex;
+  width: 90%;
+  justify-content: space-evenly;
+  margin: auto;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #ccc;
+}
+footer .contenedor-footer .content-foo {
+  text-align: center;
+}
+footer .contenedor-footer .content-foo h4 {
+  color: #fff;
+  border-bottom: 3px solid #f58897;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
+}
+footer .contenedor-footer .content-foo p {
+  color: #ccc;
+}
+footer .titulo-final {
+  text-align: center;
+  font-size: 24px;
+  margin: 20px;
+  color: rgba(196, 196, 196, 0.467);
+}
+
+@media screen and (max-width: 800px) {
+  .accordion {
+    flex-direction: column;
+    padding: 5%;
+    height: 500px;
+    box-shadow: none;
+  }
+  .box {
+    box-shadow: none;
+  }
+  .box:hover {
+    flex: 5;
+  }
+}
+@media screen and (max-width: 900px) {
+  p {
+    text-align: justify;
+    color: #000000;
+    margin: 9px 4%;
+  }
+  header {
+    background-position: center;
+  }
+  /* galeria */
+  .imagen-port {
+    width: 90%;
+  }
+  /*Form*/
+  .contact-us {
+    width: 80%;
+    padding: auto;
+  }
+  input {
+    width: 100%;
+  }
+  textarea {
+    width: 100%;
+  }
+  form {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  nav {
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+  .texto-general h1 {
+    padding: 1px;
+    font-size: 30px;
+  }
+  .texto-general h2 {
+    font-size: 25px;
+    padding: 1px;
+  }
+  p {
+    text-align: justify;
+    color: #000000;
+    margin: 9px 4%;
+  }
+  .contenido-textos-general {
+    grid-template-columns: 1fr;
+  }
+  .contenido-textos-general > div {
+    width: 100%;
+    background: linear-gradient(to right, rgba(164, 132, 163, 0.9176470588), rgba(241, 57, 82, 0.6901960784)), url(../img/sentadilla.png);
+    background-size: contain;
+    padding: 7px;
+    border-radius: 5px;
+  }
+  /*galeriia*/
+  .galeria-port {
+    grid-template-columns: 1fr;
+  }
+  /*Form*/
+  input {
+    width: 80%;
+  }
+  textarea {
+    width: 80%;
+  }
+  form {
+    width: 72%;
+  }
+  .contenedor-footer {
+    flex-direction: column;
+    border: none;
+    text-align: center;
+  }
+  .content-foo {
+    margin-bottom: 10px;
+  }
+  .content-foo h4 {
+    width: auto;
+  }
+  .content-foo p {
+    color: #fff;
+    padding-bottom: 10px;
+  }
+  .titulo-final {
+    font-style: 5px;
+  }
+}
+@media screen and (max-width: 400px) {
+  nav {
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+  nav > a {
+    margin-right: 5px;
+  }
+  .texto-general h1 {
+    font-size: 28px;
+  }
+  .texto-general h2 {
+    font-size: 20px;
+  }
+  p {
+    text-align: justify;
+    color: #000000;
+    margin: 9px 4%;
+  }
+  /*footer */
+  .contenedor-footer {
+    flex-direction: column;
+    border: none;
+  }
+  .content-foo {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .content-foo h4 {
+    border: none;
+  }
+  .content-foo p {
+    color: #fff;
+    border-bottom: 1px solid #f3f3f3;
+    padding-bottom: 20px;
+  }
+  .titulo-final {
+    font-style: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */

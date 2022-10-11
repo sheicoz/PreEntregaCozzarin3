@@ -1,0 +1,50 @@
+
+/* Portafolio */
+
+.galeria-port{
+    width: 100%;
+    display: grid;
+    padding-left: 2%;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr ;
+    .hover-galeria{
+        position: absolute;
+        width: 80%;
+        height: 80%;
+        top:0;
+        transform:scale(0);
+        background: #f6b3bc51;
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        img{
+            width: 30px;
+        }
+        p{
+            color: #fff;
+        }
+    }
+}
+
+.imagen-port{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.imagen-port > img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    display: block;
+}
+
+.imagen-port:hover .hover-galeria{
+    transform:  scale(1);
+}

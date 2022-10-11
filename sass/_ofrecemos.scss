@@ -1,0 +1,50 @@
+
+/* Lo que ofrecemos */
+/*grid*/
+
+.contenido-textos-general{
+    width: 100%;
+    padding: 70px;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr; 
+    h3{
+        text-align: center;
+        color: #ffffff;
+        margin-bottom: 30px;
+    
+    }
+    > div{
+        width: 100%;
+        background: linear-gradient(to right, #a484a3ea, #f13952b0), url(../img/sentadilla.png);
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        padding: 50px;
+        border-radius: 5px;
+    }
+    .contenido-textos{
+        .numbers{
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            margin-top: 5px;
+            width: 32px;
+            height: 32px;
+            color: rgb(255, 255, 255);
+            border-top-left-radius: 32px;
+            border-top-right-radius: 32px;
+            border-bottom-left-radius: 32px;
+            border-bottom-right-radius: 32px;
+            background-color: #ee9ca7;
+        }
+        p{
+        color: rgb(255, 255, 255);
+        text-align: justify;
+    
+    }
+    } 
+}
+

@@ -1,0 +1,58 @@
+/*Generales*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'open sans';
+}
+
+/* Header */
+
+header{
+    width: 100%;
+    height: 600px;
+    background: #ee9ca7;  
+    background: -webkit-linear-gradient(to right, #bc91b27a, #e83b5278), url(../img/portada1.png);  
+    background: linear-gradient(to right, #b38fb280, #e83b5273), url(../img/portada1.png); 
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    .wave{
+        position: absolute;
+        bottom:0;
+        width: 100%;
+    }
+}
+
+.texto-general{
+    display: block;
+    height: 300px;
+    padding: 5%;
+    width: 100%;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    h1{
+        font-size: 50px;
+        color: #ee9ca7;
+        padding-bottom: 2%;
+    }
+    h2{
+        font-size:  30px;
+        font-weight: 300;
+        color: rgb(122, 33, 91)
+    }
+}
+
+.titulo{
+    color: #c9868f;
+    font-size: 30px;
+    text-align: center;
+}
+
