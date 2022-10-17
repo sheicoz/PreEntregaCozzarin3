@@ -64,7 +64,7 @@ header .wave {
   padding: 70px;
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr;
 }
 .contenido-textos-general h3 {
@@ -73,7 +73,8 @@ header .wave {
   margin-bottom: 30px;
 }
 .contenido-textos-general > div {
-  width: 100%;
+  width: auto;
+  height: auto;
   background: linear-gradient(to right, rgba(164, 132, 163, 0.9176470588), rgba(241, 57, 82, 0.6901960784)), url(../img/sentadilla.png);
   background-size: cover;
   background-attachment: fixed;
@@ -98,7 +99,7 @@ header .wave {
 }
 .contenido-textos-general .contenido-textos p {
   color: rgb(255, 255, 255);
-  text-align: justify;
+  text-align: left;
 }
 
 /* Portafolio */
@@ -212,6 +213,50 @@ body .accordion-container {
 }
 .accordion .box:hover .texto {
   opacity: 1;
+}
+
+.beneficio-content {
+  width: 100%;
+  height: 100%;
+  padding: 5%;
+  text-align: justify;
+  color: rgb(2, 2, 2);
+  padding: 70px;
+}
+.beneficio-content .nutricion {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  border-radius: 1%;
+  background: linear-gradient(to right, rgba(179, 143, 178, 0.8745098039), rgba(232, 59, 82, 0.8823529412)), url("../img/servicios1.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.beneficio-content .salud {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  border-radius: 1%;
+  background: linear-gradient(to right, rgba(179, 143, 178, 0.8745098039), rgba(232, 59, 82, 0.8823529412)), url("../img/servicios.png") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.beneficio-content .mente {
+  width: 100%;
+  height: 100%;
+  padding: 2%;
+  border-radius: 1%;
+  background: linear-gradient(to right, rgba(179, 143, 178, 0.8745098039), rgba(232, 59, 82, 0.8823529412)), url("../img/mente1.png") no-repeat;
+  background-size: contain;
+  background-attachment: local;
+  background-position: center;
+}
+.beneficio-content li {
+  width: 100%;
+  height: 100%;
+  font-family: cursive;
+  list-style-type: none;
+  text-align: justify;
 }
 
 /*Form*/
@@ -329,6 +374,38 @@ footer .titulo-final {
   .box:hover {
     flex: 5;
   }
+  /*Beneficios */
+  .beneficio-content {
+    width: auto;
+    height: auto;
+  }
+  nav {
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+  .texto-general h1 {
+    padding: 1px;
+    font-size: 30px;
+  }
+  .texto-general h2 {
+    font-size: 25px;
+    padding: 1px;
+  }
+  p {
+    text-align: justify;
+    color: #000000;
+    margin: 9px 4%;
+  }
+  .contenido-textos-general {
+    grid-template-columns: 1fr;
+  }
+  .contenido-textos-general > div {
+    width: 100%;
+    background: linear-gradient(to right, rgba(164, 132, 163, 0.9176470588), rgba(241, 57, 82, 0.6901960784)), url(../img/sentadilla.png);
+    background-size: contain;
+    padding: 7px;
+    border-radius: 5px;
+  }
 }
 @media screen and (max-width: 900px) {
   p {
@@ -342,6 +419,10 @@ footer .titulo-final {
   /* galeria */
   .imagen-port {
     width: 90%;
+  }
+  .beneficio-content {
+    width: auto;
+    height: auto;
   }
   /*Form*/
   .contact-us {
@@ -390,6 +471,10 @@ footer .titulo-final {
   .galeria-port {
     grid-template-columns: 1fr;
   }
+  .beneficio-content {
+    width: auto;
+    height: auto;
+  }
   /*Form*/
   input {
     width: 80%;
@@ -437,6 +522,10 @@ footer .titulo-final {
     text-align: justify;
     color: #000000;
     margin: 9px 4%;
+  }
+  .beneficio-content {
+    width: auto;
+    height: auto;
   }
   /*footer */
   .contenedor-footer {

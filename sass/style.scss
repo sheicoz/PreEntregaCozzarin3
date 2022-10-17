@@ -25,6 +25,42 @@ pongo watch sass, una vez que dice waching esta copilando*/
     .box:hover {
         flex: 5;
     }
+
+    /*Beneficios */
+    
+    .beneficio-content {
+        width: auto;
+        height: auto;
+    }
+    nav{
+        text-align: center;
+        padding:20px 0 0 0;
+    }
+    .texto-general h1{
+        padding: 1px;
+        font-size: 30px;
+    }
+    .texto-general h2{
+        font-size:25px;
+        padding: 1px;
+    }
+    p{
+        text-align: justify;
+        color: #000000;
+        margin: 9px 4%;
+    }
+
+    .contenido-textos-general{
+        grid-template-columns: 1fr;
+    }
+
+    .contenido-textos-general > div{
+        width: 100%;
+        background: linear-gradient(to right, #a484a3ea, #f13952b0), url(../img/sentadilla.png);
+        background-size:contain;
+        padding: 7px;
+        border-radius: 5px;
+    }
 }
 
 
@@ -45,6 +81,11 @@ pongo watch sass, una vez que dice waching esta copilando*/
 
   .imagen-port{
         width: 90%;
+    }
+
+    .beneficio-content {
+        width: auto;
+        height: auto;
     }
      
     /*Form*/
@@ -106,6 +147,10 @@ pongo watch sass, una vez que dice waching esta copilando*/
         grid-template-columns: 1fr;
     }
     
+    .beneficio-content {
+        width: auto;
+        height: auto;
+    }
 
     /*Form*/
 
@@ -168,6 +213,10 @@ pongo watch sass, una vez que dice waching esta copilando*/
         text-align: justify;
         color: #000000;
         margin: 9px 4%;
+    }
+    .beneficio-content {
+        width: auto;
+        height: auto;
     }
 
     /*footer */
